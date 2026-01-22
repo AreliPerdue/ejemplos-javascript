@@ -28,10 +28,10 @@ const obtenerUsuarios = async (cantidad =5 ) => {
     try {
         const respuesta 
             = await fetch(`https://randomuser.me/api/?results=${cantidad}`);
-        const data = await respuesta.json();
+        const datos = await respuesta.json();
 
         let listaUsuarios = [];
-        data.results.forEach((u)=> {
+        datos.results.forEach((u)=> {
             listaUsuarios.push(new Usuario(u.name.first, u.email, u.picture.medium))
         });
 
