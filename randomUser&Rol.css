@@ -43,16 +43,8 @@ button:hover {
   padding: 1rem;
   width: 200px;
   text-align: center;
-  height: 200
 }
 
 .card img {
   border-radius: 50%;
-}
-
-img {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-
 }
